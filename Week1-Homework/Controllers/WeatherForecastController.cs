@@ -35,18 +35,18 @@ namespace Week1_Homework.Controllers
             })
             .ToArray();
         }
-        [HttpGet("{name}")]
-        public IActionResult GetByName(string name)
-        {
-            var rng = new Random();
-            if(Summaries.Contains(name))
-            {
-                return Ok(name);
-            }
-            else
-            {
-                return BadRequest(string.Format("{0} Not Fount",name));
-            }
-        }
+        //[HttpGet("{name}")]
+        //public IActionResult GetByName(string name)
+        //{
+        //    var rng = new Random();
+        //    if(Summaries.Contains(name))
+        //    {
+        //        return Ok(name);
+        //    }
+        //    else
+        //    {
+        //        return BadRequest(string.Format("{0} Not Fount",name));
+        //    }
+        //}
     }
 }
